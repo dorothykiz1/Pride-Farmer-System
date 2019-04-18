@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import from generics
+from rest_framework import generics
 from .models import District,Subcounty,Parish,Farmer,Harvest,Officer,Season
 from .serializers import DistrictSerializer,SubcountySerializer,ParishSerializer,FarmerSerializer,HarvestSerializer,OfficerSerializer,SeasonSerializer
  
