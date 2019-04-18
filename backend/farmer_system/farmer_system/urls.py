@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from farmer_system.jica import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'districts',views.DistrictAPIView.as_view(),name='Distict_list'),
+    path(r'subcounties',views.SubcountyAPIView.as_view(),name='Subcounty_list'),
+    path(r'parishes',views.ParishAPIView.as_view(),name='Parish_list'),
+    path(r'farmers',views.FarmerAPIView.as_view(),name='Farmer_list'),
+    path(r'harvests',views.HarvestAPIView.as_view(),name='Harvest_list'),
+    path(r'officers',views.OfficerAPIView.as_view(),name='Officer_list'),
+    path(r'seasons',views.SeasonAPIView.as_view(),name='Season_list'),
+
+
 ]
