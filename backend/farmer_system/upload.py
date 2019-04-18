@@ -18,7 +18,7 @@ def upload_content():
                 Parish.objects.create(name=p, subcounty=subcounty)
                 
                 print(f'added {d} , {s}, {p}')
-        return'Created'
+        return'Successfull'
 
 
 upload_content()       
